@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <title>Tip caluculator</title>
+</head>
+<body>
+    <div id="main">
+        <div id="left">
+            <div>
+                <h4>Bill</h4>
+                <input id="Bill" type="number" placeholder="0"/>
+            </div>
+            <div>
+                <h4>Select tip</h4>
+                <button id="btn5" class="btn" onclick="calcul(5)">5%</button>
+                <button id="btn10" class="btn" onclick="calcul(10)">10%</button>
+                <button id="btn15" class="btn" onclick="calcul(15)">15%</button>
+                <button id="btn25" class="btn" onclick="calcul(25)">25%</button>
+                <button id="btn50" class="btn" onclick="calcul(50)">50%</button>
+                <p id="custom">custom</p>
+            </div>
+            <div>
+                <h4>No of person</h4>
+                <input id="person" oninput="personcal()" type="number" placeholder="0"/>
+            </div>
+        </div>
+        <div id="right">
+            <div>
+                <h2>Tip amount:</h2>
+                <p id="tipdisplay">0</p>
+            </div>
+            <div>
+                <h2>Total:</h2>
+                <p id="totaldisplay">0</p>
+            </div>
+            <div>
+                <button onclick="reset()" id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
